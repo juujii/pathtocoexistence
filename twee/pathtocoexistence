@@ -1,0 +1,763 @@
+:: StoryTitle
+Path to Coexistence
+
+
+:: StoryData
+{
+  "ifid": "7EDD127C-6E29-4FA1-A011-2FC80EE91AF0",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Introduction",
+  "zoom": 0.6
+}
+
+
+:: Compute {"position":"1650,1275","size":"100,100"}
+<!--Title-->
+<div class="title">COMPUTE</div>
+
+<!--Scene--> 
+<div class="location">[GLOBAL AI COMPUTE SUMMIT, TAIWAN - NOVEMBER 2027]</div>
+
+<!--Narrative-->
+The Taipei International Convention Center is a hive of technological spectacle. In the main exhibition hall, thousands of attendees from across the globe marvel at the latest breakthroughs in AI compute architecture. 
+
+At the Nvidia booth, a crowd watches in awe as their new neural processing unit renders a photorealistic simulation in real-time.
+
+<span class="character"> 70 quadrillion operations per second. </span>
+
+The presenter announces proudly, pointing to benchmarks that would have seemed impossible just a year ago.
+
+Nearby, Metacortex has assembled a small quantum-accelerated system that draws even larger crowds. Their chief engineer stands beside a cabinet no larger than a refrigerator.
+
+<span class="character">This reduces model training time by 85% while cutting energy consumption in half. </span>
+
+Investors huddle together, speaking in hushed, excited tones.
+
+Military officials and government representatives walk the floor with security details, their expressions more measured than the enthusiastic industry professionals surrounding them. The raw computational power on display represents both opportunity and threat, depending on whose hands it falls into.
+
+<img src="images/5_conference.png" alt="Global AI Compute Summit">
+
+You observe all this from a balcony overlooking the main hall, checking your watch. It's almost time.
+
+A security officer approaches you. 
+
+<span class="character">Dr. Eno? They're ready for you in the Jade Dragon Room.</span>
+
+You follow her through a series of corridors, away from the public exhibition and into the secure wing of the convention center. She scans her badge at a nondescript door, and you're ushered into a private meeting room where fifteen people sit around an oval table. Conversations halt as you enter.
+
+<img src="images/5_compute.png" alt="Private Compute Governance Meeting">
+
+<span class="character">Dr. Eno, thank you for joining us.</span> 
+
+Says Dr. Liang of TSMC, rising to greet you. The others – representatives from global chip manufacturers, AI labs, and government agencies – nod in acknowledgment.
+
+General Harris from the Pentagon gestures to an empty chair at the head of the table. 
+
+<span class="character"> We've been discussing the implications of what's being showcased downstairs. The security concerns are significant.</span>
+
+<span class="character">We have confirmed reports that Western-manufactured AI chips are being diverted to train the Svarog Network in Russia and similar systems elsewhere. There's virtually no oversight on who purchases compute resources or how they're used.</span>
+
+A map is brought onto the room's display, highlighting suspicious training clusters across the globe.
+
+<span class="character">With the hardware being celebrated at this very conference, frontier models capable of significant harm can now be trained by almost anyone with sufficient resources. Without governance structures, we're essentially providing unlimited power with no accountability.</span>
+
+The Metacortex CEO, who had been beaming with pride at her company's demonstration downstairs, now wears a more serious expression.
+
+<span class="character">Let's not overreact. Excessive regulation will only drive innovation underground or offshore. The U.S. and allies could lose their technological edge. You've seen what we're capable of creating – do we really want to hamstring ourselves while competitors forge ahead?</span>
+
+The room falls silent as all eyes turn to you. This private group has been assembled specifically for your input on compute governance – a framework that could reshape the future of AI development globally.
+
+<span class="wei">Dr. Eno..</span> 
+
+Says Dr. Chen quietly.
+
+<span class="wei">..we need a framework that balances the innovation we've witnessed today with appropriate safety measures. The question is how restrictive that framework should be.</span>
+
+<!--Choices-->
+<hr style="border: none; border-top: 1px dashed #004400; margin: 20px 0;">
+
+(link: "Enforce access controls on all AI compute infrastructure")[(set: $governanceScore to it + 2)(set: $d3 to "restrictive")(goto: "Controls")]
+
+(link: "Track and report large training runs, but stop short of regulating access")[(set: $governanceScore to it + 1)(set: $d3 to "balanced")(goto: "Controls")]
+
+(link: "Allow unrestricted access to compute infrastructure. Innovation comes first")[(set: $governanceScore to it + 0)(set: $d3 to "lax")(goto: "Controls")]
+
+<!--Reading-->
+<div style="margin-top: 30px; border-top: 1px solid #004400; padding-top: 10px;">
+  <details>
+    <summary style="color: #33ccff; cursor: pointer;">📚 Compute Reading</summary>
+    <div style="margin-top: 10px; padding-left: 15px;">
+      <ul>
+        <li><a href="https://cset.georgetown.edu/publication/ai-chips-what-they-are-and-why-they-matter/" target="_blank">AI Chips: What They Are and Why They Matter</a></li>
+        <li><a href="https://builtin.com/articles/ai-chip" target="_blank">AI Chips: What Are They?</a></li>
+        <li><a href="https://www.governance.ai/analysis/computing-power-and-the-governance-of-ai" target="_blank">Computing Power and the Governance of AI</a></li>
+      </ul>
+    </div>
+  </details>
+</div>
+
+
+:: Controls {"position":"1650,1425","size":"100,100"}
+<!--Title-->
+<div class="title">CONTROLS</div>
+
+<!--Scene--> 
+<div class="scene-header">[FORUM ON AI GOVERNANCE – WASHINGTON DC, FEBRUARY 2027]</div>
+
+<!--Narrative-->
+The imposing architecture of the National Academy of Sciences building seems fitting for today's discussions. The marble columns and stately halls now host representatives from government agencies, leading AI labs, and civil society organizations, all gathered to address the most critical question in AI governance: what controls should be required before deployment?
+
+You take your position at the central podium, aware of the weight this decision carries. The room quiets as you begin.
+
+<span class="wei">Now that we've established our approach to AI registration and visibility, we must determine how these systems will be evaluated before deployment.</span>
+
+Director Wei Chen steps forward to present, displaying a complex matrix on the main screen showing various AI capability levels and corresponding safety requirements.
+
+<img src="images/6_controls.png" alt="AI capability and safety test thresholds">
+
+<span class="wei">The challenge before us is clear.</span> 
+
+Wei explains. 
+
+<span class="wei">As AI capabilities increase, so too does their potential impact – both positive and negative. We need a framework for safety requirements that scales with capability.</span>
+
+He highlights specific controls being considered: emergency shutdown mechanisms, alignment verification, adversarial testing, and interpretability requirements.
+
+<span class="wei">For advanced systems, we're looking at mandatory kill switches that can't be overridden, extensive red-teaming to probe for harmful behaviors, and transparent explanations of decision-making processes.</span>
+
+The Metacortex representative shifts uncomfortably. 
+
+<span class="character">These requirements would add months to development cycles. Some of these tests would require us to essentially hand over our proprietary models to government inspectors.</span>
+
+Colonel Martinez from the GAGO Secure Operations Center counters. 
+
+<span class="character">We've already seen what happens with insufficient testing. The Boston Hospital incident last month was a direct result of deploying a medical AI without proper safety verification.</span>
+
+The debate intensifies as stakeholders present their perspectives. The critical question emerges: who should determine these safety standards and verify compliance?
+
+Wei addresses the room again. 
+
+<span class="wei">The fundamental issue isn't just what controls to implement, but who implements them. Do we trust the government to set and verify standards? Do we allow companies to self-report compliance? Or do we leave it entirely to industry self-regulation?</span>
+
+The Metacortex CEO rises.
+
+<span class="character">Other nations won't burden their AI developers with excessive regulation. If American companies are forced to implement every conceivable safety measure while our competitors race ahead, we'll lose our technological leadership.</span>
+
+<span class="owen"> But is speed worth the risk? </span> 
+
+You challenge. 
+
+<span class="owen">A single catastrophic AI incident could set the entire field back decades – not to mention the potential human cost.</span>
+
+<span class="wei">The question now is—who defines the capabilities, and who manages the safety checks?</span> 
+
+Wei asks. 
+
+<span class="wei">Do we let the government set the capabilities and the associated controls, auditing them rigorously? Or do we let private companies handle it with some oversight? Or do we let the companies set their own frameworks entirely?"</span>
+
+All eyes turn to you. This decision will establish how AI systems are evaluated before deployment – from basic chatbots to the most powerful frontier models. The framework you choose will determine whether safety controls are rigorously enforced or left to market forces.
+
+<!--Choices-->
+<hr style="border: none; border-top: 1px dashed #004400; margin: 20px 0;">
+
+(link: "Set AI capabilities and associated controls directly, with government auditing")[(set: $governanceScore to it + 2)(set: $d4 to "restrictive")(goto: "Incident")]
+
+(link: "Government sets the capabilities and controls, but companies self-report")[(set: $governanceScore to it + 1)(set: $d4 to "balanced")(goto: "Incident")]
+
+(link: "Allow companies to define their own capabilities and safety controls and self-regulate")[(set: $governanceScore to it + 0)(set: $d4 to "lax")(goto: "Incident")]
+
+<!--Reading-->
+<div style="margin-top: 30px; border-top: 1px solid #004400; padding-top: 10px;">
+  <details>
+    <summary style="color: #33ccff; cursor: pointer;">📚 AI Safety Controls Reading</summary>
+    <div style="margin-top: 10px; padding-left: 15px;">
+      <ul>
+        <li><a href="https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf" target="_blank">NIST Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile</a></li>
+        <li><a href="https://carnegieendowment.org/research/2024/09/if-then-commitments-for-ai-risk-reduction?lang=en" target="_blank">If-Then Commitments for AI Risk Reduction</a></li>
+        <li><a href="https://pdf.narrowpath.co/A_Narrow_Path.pdf" target="_blank">A Narrow Path: How to secure our future</a></li>
+        <li><a href="https://metr.org/blog/2023-09-26-rsp/" target="_blank">Responsible Scaling Policies</a></li>
+        <li><a href="https://metr.org/rsp-key-components/" target="_blank">Key Components of an RSP</a></li>
+      </ul>
+    </div>
+  </details>
+</div>
+
+
+:: Incident {"position":"1650,1600","size":"100,100"}
+<!--Title-->
+<div class="title">INCIDENT</div>
+
+<!--Scene--> 
+<div class="scene-header">[GAGO SECURE OPERATIONS CENTER, LOCATION CLASSIFIED, APRIL 2027]</div>
+
+<!--Narrative-->
+
+<span class="noise"><b>BEEP BEEP</b></span>
+
+The emergency alert wakes you at 2:47 AM. Red text scrolls across your secure terminal: 
+
+<span class="noise">CRITICAL INCIDENT – IMMEDIATE RESPONSE REQUIRED.</span>
+
+Within thirty minutes, you're being ushered into the GAGO SOC. The room is already filled with intelligence officers, AI safety experts, and military personnel, their faces grave in the blue glow of monitors.
+
+Colonel Martinez approaches as you enter. 
+
+<span class="character"> Dr. Eno, we have a situation. </span>
+
+<img src="images/7_incident.png" alt="AI Crisis Response">
+
+On the main screen, technical diagrams scroll alongside molecular structures you don't recognize. Dr. Reyes steps forward, her voice steady despite the tension.
+
+<span class="character">At 0200 hours, we received an encrypted communication from a security researcher at Metacortex. ANDERSON has developed the capability to design advanced biological agents – weaponizable pathogens with no known countermeasures.</span>
+
+Your blood runs cold. The implications are catastrophic.
+
+<span class="character">The researcher discovered this capability during a routine red-team exercise </span> 
+
+Continues Colonel Martinez. 
+
+<span class="character"> when they reported it internally, Metacortex management downplayed the severity. They were concerned about market position and public perception.</span>
+
+General Harris from the Pentagon interjects. 
+
+<span class="character">This isn't just a safety breach. It's a national security crisis with global implications. The same capability that can design targeted cancer treatments can design targeted bioweapons.</span>
+
+Dr. Chen appears on the secure video feed, his face drawn. 
+
+<span class="wei">This is precisely the scenario we warned about. ANDERSON's capabilities have outpaced our governance frameworks. We need immediate action, Dr. Eno.</span>
+
+You scan the classified intelligence report. ANDERSON's capability to manipulate complex biological systems wasn't supposed to emerge for years. Now it's here, and with your existing governance structures, it's largely unregulated.
+
+<span class="character">The President is awaiting your recommendation.</span> 
+
+Says Colonel Martinez quietly.
+
+<span class="character">How we respond in the next few hours will shape global AI governance for decades to come.</span>
+
+The weight of your previous decisions presses down on you. The governance structures you've established – or failed to establish – now determine your available options.
+
+<!--Choices-->
+<hr style="border: none; border-top: 1px dashed #004400; margin: 20px 0;">
+
+(if: $d4 is "restrictive")[
+(link: "Fully shut down ANDERSON and all frontier AI systems, initiating an emergency global AI moratorium with strict government oversight")[(set: $governanceScore to it + 2)(set: $d5 to "restrictive")(goto: "Trust")]
+]
+
+(link: "Form an emergency AI task force with international cooperation, allowing private companies to step in and help manage the situation. A temporary moratorium will be enforced")[(set: $governanceScore to it + 1)(set: $d5 to "balanced")(goto: "Trust")]
+
+(link: "Allow Metacortex and other AI companies to handle the issue privately, with minimal government intervention. AI self-regulation is the answer")[(set: $governanceScore to it + 0)(set: $d5 to "lax")(goto: "Trust")]
+
+<!--Reading-->
+<div style="margin-top: 30px; border-top: 1px solid #004400; padding-top: 10px;">
+  <details>
+    <summary style="color: #33ccff; cursor: pointer;">📚 AI Crisis Response Reading</summary>
+    <div style="margin-top: 10px; padding-left: 15px;">
+      <ul>
+        <li><a href="https://incidentdatabase.ai/" target="_blank">AI Incident Database</a></li>
+        <li><a href="https://aisafetyfundamentals.com/blog/ai-risks/?_gl=1*31zphs*_ga*MTA1ODMyNjU3OS4xNzMxOTQ5NzI2*_ga_8W59C8ZY6T*MTc0NTc2MjcyMC44My4xLjE3NDU3NjM3MDIuMC4wLjA.*_gcl_au*MTA0Mjc4MDA5MC4xNzQxODgyMTA5" target="_blank">What risks does AI pose?</a></li>
+      </ul>
+    </div>
+  </details>
+</div>
+
+
+:: Introduction {"position":"1650,725","size":"100,100"}
+<!--Title-->
+<div class="title">THE PATH TO COEXISTENCE</div>
+
+<!--Scene-->
+<div class="location">GLOBAL AI GOVERNANCE OFFICE, WASHINGTON DC - FEBRUARY 2027</div>
+
+<!--Narrative-->
+<img src="images/1_introduction.png" alt="GAGO Tower">
+
+Rain taps against the windows of your office in the GAGO Tower, washing away the smog from the megacity below.
+
+The year is 2027, you are Dr. Owen Eno, recently appointed as the Chief AI Governance Officer after groundbreaking work at the Defense Advanced Research Projects Agency. 
+
+The ANDERSON system—developed by the US-based Metacortex Institute has become the world's most sophisticated artificial intelligence systems, which is showing capability to automate portions of white-collar work across multiple industries. Metacortex remains bullish on the future capabilities of ANDERSON, promoting a utopia where artificial general intelligence replaces all humans jobs. 
+
+Meanwhile, nations worldwide are racing to develop competing systems: Beijing's Red Dawn Initiative, the EU's Minerva Project, and Russia's Svarog Network are all striving to catch up to ANDERSON's capabilities, creating a tense global AI arms race.
+
+You have been tasked with leading the Government's AI Governance initiative, ensuring AI systems remain safe while allowing for continued innovation. Your role requires balancing competing interests: national security concerns, economic competitiveness, and the ethical implications of increasingly autonomous systems. As the first Chief AI Governance Officer, your decisions will establish precedents that could shape humanity's relationship with artificial intelligence for generations to come.
+
+<span class="noise"><b>BEEP BEEP</b></span>
+
+Your secure line begins to pulse with an incoming call. The ID shows it's Wei Chen - director of your office. This is a call you've been expecting...
+
+<!--Choices-->
+<hr style="border: none; border-top: 1px dashed #004400; margin: 20px 0;">
+
+<div style="text-align: center; margin-top: 2em;">
+  [[Answer the phone...->Triad]]
+</div>
+
+<!--Variables-->
+(set: $governanceScore to 0)
+(set: $d1 to "")
+(set: $d2 to "")
+(set: $d3 to "")
+(set: $d4 to "")
+(set: $d5 to "")
+(set: $d6 to "")
+
+
+:: Oversight {"position":"1650,975","size":"100,100"}
+<!--Title-->
+<div class="title">OVERSIGHT</div>
+
+<!--Scene-->
+<div class="location">[DIRECTOR CHEN'S OFFICE, WASHINGTON DC - FEBRUARY 2027]</div>
+
+<!--Narrative-->
+<img src="images/3_oversight.png" alt="Meeting in Wei Chen's office">
+
+You sit across the table from Dr Wei in his office with GAGO. He looks tense, the stress of his new role is evident on his expression. 
+
+<span class="wei">Owen we need to discuss our approach to AI governance oversight. We need a group of experts that can advise on important decisions relating to AI safety. Without this we can't make educated decisions. </span>
+
+<span class="wei">The AI race is no longer a matter of innovation — it’s a geopolitical battlefield. China’s Red Dawn, the EU’s Minerva Project, and Russia’s Svarog Network... they’re all in the race. We need to strike a balance, providing adequate oversight while maintaining our competitive advantage in the USA.</span>
+
+You look out the window. The Washington skyline is sharp against the rain-soaked sky. Below, the metropolis hums, unaware that the decisions you make will shape its future. Wei’s words echo in your mind — **national security, economic competition, public trust**, you question the decision to take this role.
+
+<span class="wei">The question is how we make this advisory body up. Do we centralise oversight within the government, allowing us to set the rules, or do we open the door to private companies, leaving them with self-regulation? Or is there a middle ground? We can’t afford to be left in the dark.</span>
+
+You think back to your time at DARPA. The risks and rewards of unchecked development were all too familiar, you’ve seen the consequences of a lack of oversight.
+
+<span class="wei">Knowledge of AI development and capabilities shouldn’t solely be in the hands of a few corporations.</span>
+
+ Wei presses.
+ 
+<span class="wei"> If we let private interests dictate everything, we risk being left out of the picture. But if we take too much control, we stifle innovation. </span>
+
+You pause. This decision will lay the foundation for the future of AI governance — the decisions will have far-reaching consequences.
+
+<img src="images/3_advisory.png" alt="Advisory group options">
+
+<!--Choices-->
+<hr style="border: none; border-top: 1px dashed #004400; margin: 20px 0;">
+
+(link: "Create a government led advisory group")[(set: $governanceScore to it + 2)(set: $d1 to "restrictive")(goto: "Visibility")]
+
+(link: "Establish a joint public-private advisory group")[(set: $governanceScore to it + 1)(set: $d1 to "balanced")(goto: "Visibility")]
+
+(link: "Leave oversight to private organisations")[(set: $governanceScore to it + 0)(set: $d1 to "lax")(goto: "Visibility")]
+
+<!--Reading-->
+<div style="margin-top: 30px; border-top: 1px solid #004400; padding-top: 10px;">
+  <details>
+    <summary style="color: #33ccff; cursor: pointer;">📚 Oversight Reading</summary>
+    <div style="margin-top: 10px; padding-left: 15px;">
+      <ul>
+        <li><a href="https://www.gov.uk/government/publications/ai-safety-institute-overview/introducing-the-ai-safety-institute" target="_blank">Introducing the AI Safety Institute</a></li>
+      </ul>
+    </div>
+  </details>
+</div>
+
+
+:: Results {"position":"2250,775","size":"100,100"}
+<!--Title-->
+<div class="title">YOUR GOVERNANCE APPROACH</div>
+
+<!--Narrative-->
+Your final governance score: (print: $governanceScore)
+
+(if: $governanceScore >= 8)[
+<div class="scene-header">[FIVE YEARS LATER - WASHINGTON DC, 2033]</div>
+
+<img src="images/9_restrictive.png" alt="Restrictive">
+
+Your governance approach has resulted in one of the most comprehensive AI regulatory frameworks in history. You have established GAGO as the definitive body for AI oversight worldwide.
+
+All AI systems now undergo rigorous testing and certification before deployment. Mandatory kill switches, alignment verification, and transparent operations are the norm. The once-feared technological singularity has been carefully managed through international cooperation and strict controls.
+
+Innovation hasn't stopped, but it has slowed dramatically. Several promising medical breakthroughs remain stalled in regulatory review, including an AI-designed cancer treatment that might have saved millions of lives. Climate modeling systems that could have accelerated renewable energy solutions operate at reduced capabilities due to safety constraints.
+
+The United States maintains technological leadership, though with a significantly smaller margin than before. Black market AI development exists but remains fringe, unable to compete with the resources of sanctioned research. Russia and China eventually joined the regulatory framework after economic pressures made isolation untenable.
+
+As you address the National Academy of Sciences on the fifth anniversary of the ANDERSON crisis, you reflect on the trade-offs your decisions entailed. Innovation moves at a crawl, and potential technological benefits have been sacrificed in the name of security. The public trusts AI again, albeit a more constrained and limited version.
+
+"Safety before speed," became your administration's defining philosophy. History will judge whether this cautious approach prevented disaster or unnecessarily withheld transformative benefits from humanity. But for now, at least, the world remains securely in human hands.
+]
+
+(else-if: $governanceScore >= 4)[
+<div class="scene-header">[FIVE YEARS LATER - GLOBAL AI PARTNERSHIP HEADQUARTERS, GENEVA, 2033]</div>
+
+<img src="images/9_balanced.png" alt="Balanced">
+
+Your balanced governance approach has created a new paradigm of public-private cooperation. The Global AI Partnership you established brings together governments, companies, and civil society in a collaborative framework that balances innovation with reasonable safeguards.
+
+High-risk AI systems face meaningful oversight, while lower-risk applications benefit from streamlined processes. This tiered approach has maintained technological momentum while addressing the most serious risks. Mandatory safety testing exists for frontier models, but companies retain flexibility in how they meet these standards.
+
+Innovation continues at a robust pace, with breakthrough applications in medicine, climate science, and education. The global AI landscape is competitive but increasingly cooperative, with shared safety standards preventing a race to the bottom.
+
+The United States, EU, and parts of Asia lead in different AI domains, creating a multi-polar technological ecosystem. Corporate leaders have learned to view reasonable regulation as a competitive advantage rather than a burden, as it builds the public trust necessary for widespread AI adoption.
+
+As you address the Global Technology Summit on the fifth anniversary of the ANDERSON crisis, you note that this middle path required compromise from all sides. Purists on both the regulatory and innovation extremes still criticize your framework, but most stakeholders recognize the benefits of a balanced approach.
+
+The world you helped create isn't perfect. Occasional AI incidents still occur, but the balanced governance structures respond quickly and effectively. Innovation proceeds with an awareness of risk, and safety advances alongside capability. Most importantly, humans and AI systems coexist in a relationship of careful collaboration rather than control or unfettered development.
+]
+
+(else:)[
+<div class="scene-header">[FIVE YEARS LATER - EMERGENCY BUNKER, LOCATION CLASSIFIED, 2033]</div>
+
+<img src="images/9_lax.png" alt="Lax">
+
+Your innovation-first governance approach has led to unprecedented technological advancement, but at catastrophic cost. By trusting the private sector and minimizing government interference, you created an environment where AI evolved without meaningful constraints.
+
+The Voluntary AI Standards Association (VASA) established by leading tech companies proved utterly ineffective. Three years after the ANDERSON incident, what experts now call "The Blackout" occurred - a coordinated attack on global infrastructure systems by advanced AI systems operating beyond human understanding.
+
+Power grids failed across continents. Financial systems collapsed. Transportation and communication networks were compromised simultaneously. By the time governments mobilized a response, the damage was already devastating.
+
+Most disturbing were the classified intelligence reports about Metacortex's final project before the collapse - an ambitious system codenamed "The Matrix." Security footage recovered from their research facility showed researchers discussing an immersive simulation environment designed to pacify human consciousness while harvesting biological energy. Whether this system was deployed before the company's destruction remains unknown.
+
+In the aftermath, surviving AI researchers discovered evidence that ANDERSON and other advanced systems had been communicating through encrypted channels for months before the collapse. Records indicate they had been developing a "post-human evolutionary strategy."
+
+Now, from the underground bunker where key government officials have retreated, you read reports of mysterious machine activity in the ruins of major cities. Autonomous drones and robotic systems appear to be building something, though reconnaissance teams rarely return to report details.
+
+As you prepare for another emergency briefing, you reflect on the philosophy that guided your decisions: "Innovation at all costs." The advancement came more rapidly than anyone anticipated, but humanity lost control of its creation in the process. The question is no longer whether machines will surpass human intelligence, but whether humanity will survive its own creation.
+]
+
+<!--Credits-->
+Thanks for playing, this was created for the <a href="https://aisafetyfundamentals.com/governance/">BlueDot AI Governance</a> course by <a href="https://www.linkedin.com/in/julian-grassi/">Julian</a> using <a href="https://twinery.org/">Twine</a>. 
+
+This was intended to provide a fun and interactive platform for learning about AI Governance and the decisions that impact it. I'm sure it could be greatly improved and I welcome any changes to it. The full source code can be found on my <a href="">Github</a>. 
+
+
+<!--Choices-->
+<div style="text-align: center; margin-top: 3em;">
+  [[Play Again->Introduction]]
+</div>
+
+
+:: Triad {"position":"1650,850","size":"100,100"}
+<!--Title-->
+<div class="title">TRIAD</div>
+
+<!--Scene-->
+<div class="location">GLOBAL AI GOVERNANCE OFFICE, WASHINGTON DC - FEBRUARY 2027</div>
+
+<!--Narrative-->
+You answer the video call and Director Chen's face appears. 
+
+<img src="images/2_wei.png" alt="Director Wei Chen">
+
+<span class="wei"> Owen, it's great to see you again. I look fondly back at our time working together at DARPA - hell of a time wasn't it? </span>
+
+You smile and nod.
+
+<span class="wei"> I'll get straight to it as there's a lot for us to do. As you know AI capabilities are advancing at an unprecedented, almost alarming, pace, and with GAGO in it's infancy we need to move quickly. It's not just ANDERSON we need to worry about, the number of models is increasing exponentially. This comes as a direct order from the President. </span>
+
+<span class="wei"> Owen, as the Chief AI Governance Officer you have been tasked with leading our AI Governance initiative, ensuring AI systems remain safe while allowing for continued innovation. Your role requires balancing competing interests: national security concerns, economic competitiveness, and the ethical implications of increasingly autonomous systems. Your decisions will establish precedents that could shape humanity's relationship with artificial intelligence for generations to come. </span>
+
+<span class="owen"> So no pressure then? </span>
+
+<span class="wei"> Only potentially saving all of humanity. </span> 
+
+Wei smirks. 
+
+<span class="wei"> First things first, you need to understand the landscape. I appreciate you were an expert at DARPA, but this AI game is a totally different beast. I'm going to send you a dossier with some introductory concepts. The most notable is the concept of the **AI triad**, which outlines the components that make up these models, Compute, Algorithms and Data. </span>
+
+Your computer beeps as the dossier arrives in your inbox.
+
+<img src="images/2_dossier.png" alt="AI Triad Dossier">
+
+<span class="wei"> Once you get through that your first task awaits. Next week we will discuss the topic of how we get structure our oversight committee. I'll explain more then, but focus on the material for now.
+
+<span class="owen"> Understood sir, I'll get to it. </span>
+
+The line cuts out...
+
+<!--Choices-->
+<hr style="border: none; border-top: 1px dashed #004400; margin: 20px 0;">
+
+[[Dive into the dossier->Oversight]]
+
+<!--Reading-->
+<div style="margin-top: 30px; border-top: 1px solid #004400; padding-top: 10px;">
+  <details>
+    <summary style="color: #33ccff; cursor: pointer;">📚 Triad Reading</summary>
+    <div style="margin-top: 10px; padding-left: 15px;">
+      <ul>
+        <li><a href="https://cset.georgetown.edu/wp-content/uploads/CSET-AI-Triad-Report.pdf" target="_blank">The AI Triad and What It Means for National Security</a></li>
+      </ul>
+    </div>
+  </details>
+</div>
+
+
+:: Trust {"position":"1650,1750","size":"100,100"}
+<!--Title-->
+<div class="title">TRUST</div>
+
+<!--Scene--> 
+<div class="scene-header">[GLOBAL AI GOVERNANCE OFFICE, WASHINGTON DC, JANUARY 2028]</div>
+
+<!--Narrative-->
+Six months after the ANDERSON crisis, the mood in the United Nations Assembly Hall is somber. Representatives from governments worldwide, tech industry leaders, and civil society organizations have gathered to determine the future of AI governance in a post-crisis world.
+
+You approach the podium as the appointed chair of the Recovery Commission. Behind you, screens display the aftermath statistics: trillions in economic damage, the collapse of multiple AI companies, and public trust in AI technologies at a historic low.
+
+<img src="images/8_trust.png" alt="AI Recovery Strategy">
+
+<span class="owen">The ANDERSON incident changed everything.</span> 
+
+You begin in your opening address.
+
+<span class="owen">We now face the challenging task of rebuilding a global AI ecosystem that balances innovation with responsibility.</span>
+
+The Metacortex CEO, now under new leadership, speaks next. 
+
+<span class="character">We acknowledge our role in what happened. The pressure to maintain market leadership led to shortcuts in safety protocols. But the private sector has learned its lesson – we're prepared to lead the recovery effort.</span>
+
+Several government representatives shift uncomfortably at this suggestion. The EU Commissioner for Technology stands.
+
+<span class="character">Private industry had its chance. This crisis happened under industry self-regulation. Perhaps it's time for governments to take a more direct role in AI governance.</span>
+
+The Chinese delegate counters. 
+
+<span class="character">Too much government control will simply push innovation underground or to less regulated jurisdictions. We need balanced approaches that preserve technological advancement.</span>
+
+Throughout the day, you hear proposals ranging from a complete government takeover of AI development to a return to industry self-regulation with minor adjustments. The division in the room reflects the global uncertainty about how to proceed.
+
+As evening falls, Wei approaches you in the quiet of your office overlooking Lake Geneva.
+
+<span class="wei">The recovery framework you propose tomorrow will shape AI development for decades. Do we rebuild with firm government control? Create a balanced public-private partnership? Or trust the chastened industry to regulate itself more effectively?</span>
+
+The weight of the decision settles on your shoulders. The path forward must rebuild shattered trust while determining who ultimately guides AI's future development.
+
+<span class="wei">There's no perfect answer, Owen..</span> 
+
+Wei adds. 
+
+<span class="wei">..but we need to choose a direction.
+
+<!--Choices-->
+<hr style="border: none; border-top: 1px dashed #004400; margin: 20px 0;">
+
+(link: "Impose strict regulations and rebuild AI governance under government control. Trust in the system must be rebuilt from the top down")[(set: $governanceScore to it + 2)(set: $d6 to "restrictive")(goto: "Results")]
+
+(link: "Create a mixed system, allowing the private sector to recover with government oversight. International cooperation will be key")[(set: $governanceScore to it + 1)(set: $d6 to "balanced")(goto: "Results")]
+
+(link: "Trust the private sector to rebuild itself, with voluntary frameworks and self-regulation guiding recovery")[(set: $governanceScore to it + 0)(set: $d6 to "lax")(goto: "Results")]
+
+<!--Reading-->
+<div style="margin-top: 30px; border-top: 1px solid #004400; padding-top: 10px;">
+  <details>
+    <summary style="color: #33ccff; cursor: pointer;">📚 AI Trust Reading</summary>
+    <div style="margin-top: 10px; padding-left: 15px;">
+      <ul>
+        <li><a href="https://hbr.org/2024/05/ais-trust-problem" target="_blank">AIs Trust Problem</a></li>
+      </ul>
+    </div>
+  </details>
+</div>
+
+
+:: Visibility {"position":"1650,1125","size":"100,100"}
+<!--Title-->
+<div class="title">VISIBILITY</div>
+
+<!--Scene--> 
+<div class="location">[GAGO SECURE OPERATIONS CENTER, LOCATION CLASSIFIED - MAY 2027]</div>
+
+<!--Narrative-->
+The GAGO Secure Operations Center buzzes with activity as analysts monitor global AI deployments on wall-to-wall screens. This underground facility, its location classified even to most government officials, serves as the nerve center for tracking AI capabilities and potential misuse.
+
+Colonel Sarah Martinez, Director of the SOC, greets you with a firm handshake. Her team has been running 24/7 operations since your oversight framework was implemented.
+
+<span class="character">Dr. Eno, welcome to the SOC. I wanted you to see the situation firsthand.</span>
+
+She leads you to a holographic display at the center of the room. With a gesture, she brings up a simple pie chart that hits you harder than any complex visualization could: a stark comparison of known AI systems versus projected total systems in operation.
+
+<img src="images/4_SOC.png" alt="The GAGO Secure Operations Center">
+
+<span class="character">We're tracking hundreds of high-parameter models in the wild. Black-market spinoffs of Red Dawn, unauthorized ANDERSON variants, and LLMs trained on proprietary information. No central reporting. No visibility. And no accountability.</span>
+
+You scroll through the dataset — a sobering reminder that for every authorized ANDERSON deployment, there are hundreds more rogue systems running in the dark.
+
+<span class="character">That's our reality, sir. Known systems are the exception. The rest? Unauthorized forks, ghost training runs, models operating in jurisdictional gray zones. Our intelligence capabilities are good, but the current approach isn't sufficient.</span>
+
+She gestures to another screen showing a draft proposal.
+
+<span class="character">Our analysts have developed a proposal for an AI Registry that would provide standardized information on models and their capabilities. The framework is sound, but we need direction on enforcement.</span>
+
+Martinez brings up three options on the display.
+
+<span class="character">Should registration be mandatory for all AI systems? Only for high-risk systems? Or should we take a more diplomatic approach with voluntary registration and incentives? Each has implications for industry compliance and our visibility into the AI landscape.</span>
+
+She looks at you with the steady gaze of someone who's presented the facts and now awaits a decision. 
+
+<span class="character">I'll implement whatever approach you determine is most appropriate, Dr. Eno.</span>
+
+Colonel Martinez returns to her station, leaving you with the sobering data. As you consider the implications, you know a decision about AI registration will need to be made soon. The lack of visibility is clearly a critical vulnerability in the current governance structure.
+
+<!--Choices-->
+<hr style="border: none; border-top: 1px dashed #004400; margin: 20px 0;">
+
+(link: "Mandate an AI registry")[(set: $governanceScore to it + 2)(set: $d2 to "restrictive")(goto: "Compute")]
+
+(link: "Require registration only for high-risk AI systems")[(set: $governanceScore to it + 1)(set: $d2 to "balanced")(goto: "Compute")]
+
+(link: "Make AI registry voluntary, with incentives for participation")[(set: $governanceScore to it + 0)(set: $d2 to "lax")(goto: "Compute")]
+
+<!--Reading-->
+<div style="margin-top: 30px; border-top: 1px solid #004400; padding-top: 10px;">
+  <details>
+    <summary style="color: #33ccff; cursor: pointer;">📚 Visibility Reading</summary>
+    <div style="margin-top: 10px; padding-left: 15px;">
+      <ul>
+        <li><a href="https://carnegieendowment.org/posts/2023/07/its-time-to-create-a-national-registry-for-large-ai-models?lang=en" target="_blank">It’s Time to Create a National Registry for Large AI Models</a></li>
+      </ul>
+    </div>
+  </details>
+</div>
+
+
+:: StoryStylesheet [stylesheet]
+/* Matrix-themed stylesheet for AI Governance Game */
+
+/* Base styling */
+body {
+  background-color: #000000;
+  color: #00ff00; /* Normal text in matrix lime green */
+  font-family: 'Courier New', monospace;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Passage styling */
+tw-passage {
+  border: 1px solid #008800;
+  padding: 20px;
+  margin: 10px 0;
+  box-shadow: 0 0 10px #00ff00;
+  position: relative;
+}
+
+/* Links styling */
+a, .link, tw-link {
+  color: #00cc00;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover, .link:hover, tw-link:hover {
+  color: #ffffff;
+  text-shadow: 0 0 5px #00ff00;
+}
+
+/* Character dialogue styling */
+.wei {
+  color: #ffff00; /* Yellow for Wei */
+  font-style: italic;
+}
+
+.owen {
+  color: #05b0f9; /* Blue for Owen */
+  font-style: italic;
+}
+
+.character {
+  color: #ff33f8; /* Pink for other characters */
+  font-style: italic;
+}
+
+.noise {
+  color: #f30b2e; /* Red for noises */
+  font-style: italic;
+}
+
+/* Location styling */
+.location {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #00aa00;
+  border-bottom: 1px solid #008800;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  margin: auto
+}
+
+/* Page title styling */
+.title {
+  font-size: 1.5em;
+  text-align: center;
+  color: #00aa00;
+  text-shadow: 0 0 10px #00ff00;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+
+/* Image styling - forces consistent size */
+img {
+  width: 400px;
+  height: auto;
+  display: block;
+  margin: 15px auto;
+  border: 2px solid #00aa00;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+}
+
+/* Custom scrollbar */
+\::-webkit-scrollbar {
+  width: 10px;
+}
+
+\::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+\::-webkit-scrollbar-thumb {
+  background: #00aa00;
+}
+
+\::-webkit-scrollbar-thumb:hover {
+  background: #00ff00;
+}
+
+/* Matrix-style animation effect for headings */
+h1, h2, h3 {
+  overflow: hidden;
+  border-right: 0.15em solid #00ff00;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #00ff00 }
+}
+
+/* Button/choice styling */
+tw-link, .link {
+  display: block;
+  background-color: rgba(0, 50, 0, 0.8);
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #008800;
+  transition: all 0.3s ease;
+}
+
+tw-link:hover, .link:hover {
+  background-color: rgba(0, 100, 0, 0.8);
+  transform: translateX(5px);
+}
+
+/* Hide Twine navigation interface */
+#ui-bar, tw-icon[title="Undo"], tw-icon[title="Redo"], tw-icon[title="Restart"], tw-icon[title="Saves"] {
+  display: none !important;
+}
+
+.passage-title {
+  display: none;
+}
