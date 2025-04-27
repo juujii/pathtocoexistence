@@ -26,7 +26,7 @@ The game was built using [Twine](https://twinery.org/), an open-source tool for 
 
 ## Credits
 * Created by [Julian Grassi](https://www.linkedin.com/in/julian-grassi/)
-* Based on concepts from the BlueDot AI Governance course
+* Based on concepts from the [BlueDot AI Governance course](https://aisafetyfundamentals.com/governance/)
 * Inspired by themes from The Matrix
 
 ## Educational Value
