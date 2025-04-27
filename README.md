@@ -1,4 +1,5 @@
 # The Path to Coexistence: An AI Governance Simulation
+![alt text](images/logo.png "Logo")
 
 ## Project Overview
 "The Path to Coexistence" is an interactive narrative game that puts players in the role of Dr. Owen Eno, the Chief AI Governance Officer in the year 2027. As advanced AI systems like ANDERSON begin to transform society, players must make critical decisions about how to govern this powerful technology.
