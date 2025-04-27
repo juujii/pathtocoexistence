@@ -19,7 +19,7 @@ Players navigate through a series of crucial decision points related to AI gover
 Each decision offers three possible approaches (restrictive, balanced, or permissive), and the cumulative effect of these choices determines one of three endings.
 
 ## Technical Implementation
-* The game was built using [Twine](https://twinery.org/), an open-source tool for creating interactive, non-linear stories. It features:
+The game was built using [Twine](https://twinery.org/), an open-source tool for creating interactive, non-linear stories. It features:
 * Educational resources embedded at each decision point
 * A scoring system that tracks the player's governance approach
 * Multiple endings based on cumulative decisions
