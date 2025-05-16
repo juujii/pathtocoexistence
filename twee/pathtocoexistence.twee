@@ -103,7 +103,7 @@ Says Dr. Chen quietly.
 <div class="title">CONTROLS</div>
 
 <!--Scene--> 
-<div class="scene-header">[FORUM ON AI GOVERNANCE – WASHINGTON DC, FEBRUARY 2027]</div>
+<div class="location">FORUM ON AI GOVERNANCE – WASHINGTON DC, FEBRUARY 2027</div>
 
 <!--Narrative-->
 The imposing architecture of the National Academy of Sciences building seems fitting for today's discussions. The marble columns and stately halls now host representatives from government agencies, leading AI labs, and civil society organizations, all gathered to address the most critical question in AI governance: what controls should be required before deployment?
@@ -189,7 +189,7 @@ All eyes turn to you. This decision will establish how AI systems are evaluated 
 <div class="title">INCIDENT</div>
 
 <!--Scene--> 
-<div class="scene-header">[GAGO SECURE OPERATIONS CENTER, LOCATION CLASSIFIED, APRIL 2027]</div>
+<div class="location">GAGO SECURE OPERATIONS CENTER, LOCATION CLASSIFIED, APRIL 2027</div>
 
 <!--Narrative-->
 
@@ -262,7 +262,7 @@ The weight of your previous decisions presses down on you. The governance struct
 </div>
 
 
-:: Introduction {"position":"1650,725","size":"100,100"}
+:: Introduction {"position":"1650,650","size":"100,100"}
 <!--Title-->
 <div class="title">THE PATH TO COEXISTENCE</div>
 
@@ -308,7 +308,7 @@ Your secure line begins to pulse with an incoming call. The ID shows it's Wei Ch
 <div class="title">OVERSIGHT</div>
 
 <!--Scene-->
-<div class="location">[DIRECTOR CHEN'S OFFICE, WASHINGTON DC - FEBRUARY 2027]</div>
+<div class="location">DIRECTOR CHEN'S OFFICE, WASHINGTON DC - FEBRUARY 2027</div>
 
 <!--Narrative-->
 <img src="images/3_oversight.png" alt="Meeting in Wei Chen's office">
@@ -365,7 +365,7 @@ You pause. This decision will lay the foundation for the future of AI governance
 Your final governance score: (print: $governanceScore)
 
 (if: $governanceScore >= 8)[
-<div class="scene-header">[FIVE YEARS LATER - WASHINGTON DC, 2033]</div>
+<div class="location">FIVE YEARS LATER - WASHINGTON DC, 2033</div>
 
 <img src="images/9_restrictive.png" alt="Restrictive">
 
@@ -383,7 +383,7 @@ As you address the National Academy of Sciences on the fifth anniversary of the 
 ]
 
 (else-if: $governanceScore >= 4)[
-<div class="scene-header">[FIVE YEARS LATER - GLOBAL AI PARTNERSHIP HEADQUARTERS, GENEVA, 2033]</div>
+<div class="location">FIVE YEARS LATER - GLOBAL AI PARTNERSHIP HEADQUARTERS, GENEVA, 2033</div>
 
 <img src="images/9_balanced.png" alt="Balanced">
 
@@ -401,7 +401,7 @@ The world you helped create isn't perfect. Occasional AI incidents still occur, 
 ]
 
 (else:)[
-<div class="scene-header">[FIVE YEARS LATER - EMERGENCY BUNKER, LOCATION CLASSIFIED, 2033]</div>
+<div class="location">FIVE YEARS LATER - EMERGENCY BUNKER, LOCATION CLASSIFIED, 2033</div>
 
 <img src="images/9_lax.png" alt="Lax">
 
@@ -423,7 +423,7 @@ As you prepare for another emergency briefing, you reflect on the philosophy tha
 <!--Credits-->
 Thanks for playing, this was created for the <a href="https://aisafetyfundamentals.com/governance/">BlueDot AI Governance</a> course by <a href="https://www.linkedin.com/in/julian-grassi/">Julian</a> using <a href="https://twinery.org/">Twine</a>. 
 
-This was intended to provide a fun and interactive platform for learning about AI Governance and the decisions that impact it. I'm sure it could be greatly improved and I welcome any changes to it. The full source code can be found on my <a href="">Github</a>. 
+This was intended to provide a fun and interactive platform for learning about AI Governance and the decisions that impact it. I'm sure it could be greatly improved and I welcome any changes to it. The full source code can be found on my <a href="https://github.com/juujii/pathtocoexistence/tree/main">Github</a>. 
 
 
 <!--Choices-->
@@ -488,12 +488,12 @@ The line cuts out...
 </div>
 
 
-:: Trust {"position":"1650,1750","size":"100,100"}
+:: Trust {"position":"1675,1775","size":"100,100"}
 <!--Title-->
 <div class="title">TRUST</div>
 
 <!--Scene--> 
-<div class="scene-header">[GLOBAL AI GOVERNANCE OFFICE, WASHINGTON DC, JANUARY 2028]</div>
+<div class="location">UNITED NATIONS ASSEMBLY HALL, NEW YORK CITY, JANUARY 2028</div>
 
 <!--Narrative-->
 Six months after the ANDERSON crisis, the mood in the United Nations Assembly Hall is somber. Representatives from governments worldwide, tech industry leaders, and civil society organizations have gathered to determine the future of AI governance in a post-crisis world.
@@ -561,7 +561,7 @@ Wei adds.
 <div class="title">VISIBILITY</div>
 
 <!--Scene--> 
-<div class="location">[GAGO SECURE OPERATIONS CENTER, LOCATION CLASSIFIED - MAY 2027]</div>
+<div class="location">GAGO SECURE OPERATIONS CENTER, LOCATION CLASSIFIED - MAY 2027</div>
 
 <!--Narrative-->
 The GAGO Secure Operations Center buzzes with activity as analysts monitor global AI deployments on wall-to-wall screens. This underground facility, its location classified even to most government officials, serves as the nerve center for tracking AI capabilities and potential misuse.
